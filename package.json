@@ -22,9 +22,9 @@
     "test:watch": "npm test -- --watch"
   },
   "dependencies": {
-    "@wasm-codecs/gifsicle": "^1.0.0",
-    "@wasm-codecs/mozjpeg": "^1.0.1",
-    "@wasm-codecs/oxipng": "^1.0.1",
+    "@wasm-codecs/gifsicle": "https://gitpkg.vercel.app/OlegFlores/wasm-codecs/packages/gifsicle?master",
+    "@wasm-codecs/mozjpeg": "https://gitpkg.vercel.app/OlegFlores/wasm-codecs/packages/mozjpeg?master",
+    "@wasm-codecs/oxipng": "https://gitpkg.vercel.app/OlegFlores/wasm-codecs/packages/oxipng?master",
     "file-loader": "^6.0.0",
     "get-rgba-palette": "^2.0.1",
     "imagemin": "^7.0.1",
