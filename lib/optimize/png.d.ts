@@ -3,7 +3,7 @@ import { Sharp } from 'sharp';
 import { ImageminOptions, LoaderOptions } from '../options';
 import { ImageOptions } from '../parseQuery';
 /**
- * Optimize a png image using @wasm-codecs/oxipng
+ * Optimize a png image using @oyflores/oxipng
  *
  * @async
  * @param {Sharp} image Sharp wrapped input image

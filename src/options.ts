@@ -1,6 +1,6 @@
-import { EncodeOptions as MozjpegOptions } from '@wasm-codecs/mozjpeg/lib/types';
-import { EncodeOptions as OxipngOptions } from '@wasm-codecs/oxipng/lib/types';
-import { EncodeOptions as GifsicleOptions } from '@wasm-codecs/gifsicle/lib/types';
+import { EncodeOptions as MozjpegOptions } from '@oyflores/mozjpeg/lib/types';
+import { EncodeOptions as OxipngOptions } from '@oyflores/oxipng/lib/types';
+import { EncodeOptions as GifsicleOptions } from '@oyflores/gifsicle/lib/types';
 
 import { Options as ImageminMozjpegOptions } from 'imagemin-mozjpeg';
 import { Options as ImageminOptipngOptions } from 'imagemin-optipng';

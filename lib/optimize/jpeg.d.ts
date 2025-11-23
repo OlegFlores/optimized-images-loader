@@ -3,7 +3,7 @@ import { Sharp } from 'sharp';
 import { ImageminOptions, LoaderOptions } from '../options';
 import { ImageOptions } from '../parseQuery';
 /**
- * Optimize a jpeg image using @wasm-codecs/mozjpeg
+ * Optimize a jpeg image using @oyflores/mozjpeg
  *
  * @async
  * @param {Sharp} image Sharp wrapped input image

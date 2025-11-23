@@ -1,11 +1,11 @@
 import { Sharp } from 'sharp';
-import encode from '@wasm-codecs/mozjpeg';
+import encode from '@oyflores/mozjpeg';
 import { ImageminOptions, LoaderOptions } from '../options';
 import { ImageOptions } from '../parseQuery';
 import { compress } from './imagemin';
 
 /**
- * Optimize a jpeg image using @wasm-codecs/mozjpeg
+ * Optimize a jpeg image using @oyflores/mozjpeg
  *
  * @async
  * @param {Sharp} image Sharp wrapped input image
@@ -29,7 +29,7 @@ const optimizeJpeg = async (
     info: { width, height, channels },
   } = await image.raw().toBuffer({ resolveWithObject: true });
 
-  // encode the image using @wasm-codecs/mozjpeg
+  // encode the image using @oyflores/mozjpeg
   return encode(data, { width, height, channels }, options);
 };
 

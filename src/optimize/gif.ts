@@ -1,5 +1,5 @@
 import sharp from 'sharp';
-import encode from '@wasm-codecs/gifsicle';
+import encode from '@oyflores/gifsicle';
 import { LoaderOptions } from '../options';
 import { ImageOptions } from '../parseQuery';
 

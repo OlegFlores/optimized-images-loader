@@ -1,11 +1,11 @@
 import { Sharp } from 'sharp';
-import encode from '@wasm-codecs/oxipng';
+import encode from '@oyflores/oxipng';
 import { ImageminOptions, LoaderOptions } from '../options';
 import { ImageOptions } from '../parseQuery';
 import { compress } from './imagemin';
 
 /**
- * Optimize a png image using @wasm-codecs/oxipng
+ * Optimize a png image using @oyflores/oxipng
  *
  * @async
  * @param {Sharp} image Sharp wrapped input image
@@ -23,7 +23,7 @@ const optimizePng = async (
   const imageminBuffer = await compress(image, imageminOptions);
   if (imageminBuffer) return imageminBuffer;
 
-  // encode the image using @wasm-codecs/oxipng
+  // encode the image using @oyflores/oxipng
   return encode(await image.toBuffer(), options);
 };
 
