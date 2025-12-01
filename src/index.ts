@@ -38,11 +38,20 @@ export default function optimizedImagesLoader(this: loader.LoaderContext, source
         });
       }
     } else {
-      // process image
-      result = await processImage(source, imageOptions, loaderOptions);
+      try {
+        // process image
+        result = await processImage(source, imageOptions, loaderOptions);
 
-      // cache processed image
-      setCache(cacheHash, result.data, result.info, imageOptions, loaderOptions);
+        // cache processed image
+        setCache(cacheHash, result.data, result.info, imageOptions, loaderOptions);
+      } catch (err) {
+        // Fix to mute errors when trying to process SVG fonts
+        console.error('Could not process the image file');
+        result = {
+          data: source,
+          info: {},
+        };
+      }
     }
 
     // process further loaders
