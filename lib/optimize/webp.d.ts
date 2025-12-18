@@ -11,5 +11,5 @@ import { ImageOptions } from '../parseQuery';
  * @param {LoaderOptions['webp']} [options] Webp options
  * @returns {Buffer} Optimized image
  */
-declare const optimizeWebp: (image: Sharp, imageOptions: ImageOptions, options?: LoaderOptions['webp'], imageminOptions?: ImageminOptions | undefined) => Promise<Buffer>;
+declare const optimizeWebp: (image: Sharp, imageOptions: ImageOptions, options?: LoaderOptions['webp'], imageminOptions?: ImageminOptions) => Promise<Buffer>;
 export default optimizeWebp;

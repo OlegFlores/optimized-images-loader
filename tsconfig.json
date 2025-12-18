@@ -6,7 +6,9 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "declaration": true,
-    "outDir": "lib"
+    "outDir": "lib",
+    "types": ["node"],
+    "lib": ["ES2019"]
   },
   "exclude": ["./lib", "./*.d.ts", "./__tests__"]
 }

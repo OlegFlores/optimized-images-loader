@@ -12,3 +12,4 @@ npm-debug.log*
 # project
 tmp
 .cache
+package-lock.json

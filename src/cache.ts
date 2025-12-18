@@ -31,8 +31,8 @@ const isValidCacheFolder = async (cacheFolder: string): Promise<boolean> => {
     try {
       await fs.mkdir(cacheFolder);
       return true;
-    } catch (e) {
-      return e.code === 'EEXIST';
+    } catch (e: any) {
+      return e?.code === 'EEXIST';
     }
   }
 };

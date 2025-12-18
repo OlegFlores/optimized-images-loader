@@ -11,5 +11,5 @@ import { ImageOptions } from '../parseQuery';
  * @param {LoaderOptions['mozjpeg']} [options] Mozjpeg options
  * @returns {Buffer} Optimized image
  */
-declare const optimizeJpeg: (image: Sharp, imageOptions: ImageOptions, options?: LoaderOptions['mozjpeg'], imageminOptions?: ImageminOptions | undefined) => Promise<Buffer>;
+declare const optimizeJpeg: (image: Sharp, imageOptions: ImageOptions, options?: LoaderOptions['mozjpeg'], imageminOptions?: ImageminOptions) => Promise<Buffer>;
 export default optimizeJpeg;

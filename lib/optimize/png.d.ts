@@ -11,5 +11,5 @@ import { ImageOptions } from '../parseQuery';
  * @param {LoaderOptions['oxipng']} [options] Oxipng options
  * @returns {Buffer} Optimized image
  */
-declare const optimizePng: (image: Sharp, imageOptions: ImageOptions, options?: LoaderOptions['oxipng'], imageminOptions?: ImageminOptions | undefined) => Promise<Buffer>;
+declare const optimizePng: (image: Sharp, imageOptions: ImageOptions, options?: LoaderOptions['oxipng'], imageminOptions?: ImageminOptions) => Promise<Buffer>;
 export default optimizePng;

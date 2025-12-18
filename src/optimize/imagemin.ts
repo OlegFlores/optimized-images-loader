@@ -6,6 +6,7 @@ export async function compress(image: Sharp, options?: ImageminOptions): Promise
   if (!options) return undefined;
   const plugins = [];
 
+  // @ts-ignore
   if (options?.mozjpeg && options.mozjpeg !== false) {
     const mozjpeg = require('imagemin-mozjpeg');
     if (options.mozjpeg === true) {
@@ -15,6 +16,7 @@ export async function compress(image: Sharp, options?: ImageminOptions): Promise
     }
   }
 
+  // @ts-ignore
   if (options?.optipng && options.optipng !== false) {
     const optipng = require('imagemin-optipng');
     if (options.optipng === true) {
@@ -24,6 +26,7 @@ export async function compress(image: Sharp, options?: ImageminOptions): Promise
     }
   }
 
+  // @ts-ignore
   if (options?.pngquant && options.pngquant !== false) {
     const pngquant = require('imagemin-pngquant');
     if (options.pngquant === true) {
